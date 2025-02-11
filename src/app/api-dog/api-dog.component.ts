@@ -11,21 +11,21 @@ type DogApiResponse = {
 }
 
 @Component({
-  selector: 'app-consulta-api',
+  selector: 'app-api-dog',
   standalone: true,
   imports: [CommonModule],
-  templateUrl: './consulta-api.component.html',
-  styleUrls: ['./consulta-api.component.css']
+  templateUrl: './api-dog.component.html',
+  styleUrls: ['./api-dog.component.css']
 })
 
-export class ConsultaApiComponent {
+export class ApiDogComponent {
   dogImage: string | null = null;
   dogBreedName: string = 'Raça desconhecida';
   dogTemperament: string = '';
   dogLifeSpan: string = '';
 
   private apiUrl = 'https://api.thedogapi.com/v1/images/search?has_breeds=true&limit=1';
-  private apiKey = 'live_2ATUNr2MIzw5kvx5UCA22sNGn0vvF7htqwuxC9bQQyrvGLb0e1a3fF1siA7DItMi'; //Sem o código da API Nome, Descrição e Expectativa de vida serão sempre desconhidas 
+  private apiKey = 'live_2ATUNr2MIzw5kvx5UCA22sNGn0vvF7htqwuxC9bQQyrvGLb0e1a3fF1siA7DItMi'; //Sem o código da API Nome, Descrição e Expectativa de vida serão sempre desconhecidas 
 
   constructor(private http: HttpClient) { }
 

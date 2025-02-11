@@ -1,21 +1,15 @@
 import { Component } from '@angular/core';
-import { ConsultaApiComponent } from './consulta-api/consulta-api.component';
-import { Title } from '@angular/platform-browser';
+import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
+import { ApiDogComponent } from './api-dog/api-dog.component';
+import { ApiCatComponent } from './api-cat/api-cat.component';
+
 
 @Component({
   selector: 'app-root',
-  imports: [ConsultaApiComponent],
+  imports: [RouterOutlet, RouterLink, RouterLinkActive, ApiDogComponent, ApiCatComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  constructor(private titleService: Title) {}
-
-  setTitle(newTitle: string) {
-    this.titleService.setTitle(newTitle);
-  }
-
-  ngOnInit() {
-    this.setTitle('Meu Novo Título');
-  }
+  title = 'Projeto Angular';
 }

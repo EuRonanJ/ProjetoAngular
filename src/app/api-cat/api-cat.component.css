@@ -9,7 +9,7 @@ img {
     align-items: center; 
     flex-direction: row;  
     gap: 20px;  
-    height: 100vh; 
+    height: 70vh; 
 } 
  
 .info { 
@@ -21,7 +21,7 @@ button {
     font-size: 1rem; 
     padding: 10px 20px; 
     cursor: pointer; 
-    background-color: #4CAF50; 
+    background-color: #FFD700 ; 
     color: white; 
     border: none; 
     border-radius: 5px; 
@@ -33,7 +33,7 @@ button {
 } 
  
 button:hover { 
-    background-color: #45a049; 
+    background-color: #FFD700 ; 
 } 
  
 .waiting-message { 
@@ -43,6 +43,6 @@ button:hover {
     height: 100vh;  
     font-weight: bold;  
     font-size: 2rem;  
-    color: #45a049; 
+    color: #FFD700; 
     text-align: center; 
   } 
