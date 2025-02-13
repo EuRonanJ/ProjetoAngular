@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 
 type DogApiResponse = {
@@ -13,7 +12,7 @@ type DogApiResponse = {
 @Component({
   selector: 'app-api-dog',
   standalone: true,
-  imports: [CommonModule],
+  imports: [],
   templateUrl: './api-dog.component.html',
   styleUrls: ['./api-dog.component.css']
 })
